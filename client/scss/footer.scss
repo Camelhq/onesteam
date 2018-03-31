@@ -1,0 +1,58 @@
+
+.top-footer-container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: auto;
+  // background-color: #431434; /* For browsers that do not support gradients */
+  // color: white;
+}
+.footer-item{
+  max-width: 250px;
+  height: 150px;
+  margin: 5px;
+  // background-color: green;
+}
+
+
+
+.footer-background{
+  // background-color: #431434;
+  background-color: blue; /* For browsers that do not support gradients */
+  color: white;
+  text-align: center;
+}
+.negative-footer-padding{
+  padding-top: 75px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.footer-padding{
+  padding-top: 20px;
+}
+
+.footer {
+  // background: #5790F9; /* For browsers that do not support gradients */
+  background: #444;
+  // background: -webkit-linear-gradient(left, #5790F9 , white); /* For Safari 5.1 to 6.0 */
+  // background: -o-linear-gradient(right, #5790F9, white); /* For Opera 11.1 to 12.0 */
+  // background: -moz-linear-gradient(right, #5790F9, white); /* For Firefox 3.6 to 15 */
+  // background: linear-gradient(to right, #5790F9 , white);
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  font-weight: lighter !important;
+  // letter-spacing: 1px;
+  // border-style: solid;
+  // border-color: #ff0000 #0000ff;
+  // border-width: 1px;
+}

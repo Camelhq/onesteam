@@ -1,0 +1,185 @@
+
+.commerical-flex-container{
+  // background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+
+.commerical-theatre-img {
+  background-image: url("../imgs/commerical.png");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 1000px;
+  height: 550px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.commerical-description{
+  margin: 20px;
+  width: 300px;
+  font-family: 'Avenir', sans-serif;
+  font-size: 26px;
+  margin-top: 10px;
+  line-height: 36px;
+}
+.commerical-description-button{
+  width: 300px;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 36px;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align:top;
+  margin-right: 10px;
+}
+
+.commerical-page-description{
+  margin: 20px;
+  width: 200px;
+  font-family: 'Avenir', sans-serif;
+  font-size: 26px;
+  margin-top: 10px;
+  line-height: 36px;
+}
+.commerical-button{
+  background-color: blue;
+  width: 100px;
+  margin-left: 40px;
+  height: 30px;
+  color: #5790F9;
+  border-radius: 5px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  // vertical-align:top;
+  // padding-top: 10px;
+}
+.commerical-click{
+  // width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100px;
+  color: white;
+}
+
+//commerical page
+
+// .commerical-page {
+//   background-image: url("../imgs/outside-theater.png");
+//   background-repeat: no-repeat;
+//   width: auto;
+//   height: 500px;
+// }
+.commerical-comment {
+  position: absolute;
+  border-radius: 5px;
+  // border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-width: 1px;
+  max-width: 100%;
+  // width: 350px;
+  height: 250px;
+  background-color: white;
+  right: 90px;
+  top: -30px;
+}
+
+.size{
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-top: 250px;
+}
+.commerical-circle {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 23px 30px 0 rgba(0,0,0,0.13);
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.13);
+}
+
+
+.description-commerical{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1230px;
+  height: 500px;
+  margin: 0 auto;
+  // background-color: blue;
+}
+
+.description-commerical-top{
+  margin-top: 75px;
+}
+
+.commerical-box{
+  width: 500px;
+  height: auto;
+}
+
+.description-commerical-intro{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1230px;
+  height: 600px;
+  margin: 0 auto;
+  // background-color: blue;
+}
+
+.commerical-line-spacing-title{
+  line-height: 40px;
+}
+.commerical-line-spacing{
+  line-height: 27px;
+}
+
+.commerical-action-button{
+  width: 350px;
+  margin: auto;
+  background-color: blue;
+  height: 40px;
+  color: #5790F9;
+  border-radius: 5px;
+}
+
+.commerical-action-button-spacing{
+  margin-top: 20px;
+}
+
+.business-number-font{
+  font-size: 40px;
+  color: blue;
+  text-align: center;
+}
+.business-number-description{
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="38px" viewBox="0 0 36 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>house</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-231.000000, -114.000000)" stroke="#547DFB">
+            <path d="M231.5,126.830549 L231.5,151.069864 L244.499454,151.069864 L244.499454,135.826077 L252.705016,135.826077 L252.705016,151.069864 L266.5,151.069864 L266.5,126.830549 C258.462414,121.217695 258.380613,121.160571 253.21373,117.552404 C249.702288,115.100274 249.478906,114.94428 248.848918,114.504343 C248.676877,114.835493 248.673827,114.837623 248.16127,115.195555 L244.78627,117.552404 C239.619387,121.160571 239.537586,121.217695 231.671958,126.710466 L231.5,126.830549 Z" id="house"></path>
+        </g>
+    </g>
+</svg>

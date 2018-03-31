@@ -1,0 +1,198 @@
+
+
+
+
+.call-to-action-invoice{
+  // background-image: url("/client/imgs/onesteam-cleaning.png");
+  // background-repeat: no-repeat;
+  // background-position: 30% 20%;
+  // max-width: 100%;
+  // background-size: cover;
+  // height: 100%;
+  height: 250px;
+  // display: block;
+  background-color: black;
+}
+
+.align-quote-page {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.invoice-header{
+  // background-color: blue;
+  display: flex;
+  justify-content: space-between;
+}
+.invoice-float{
+  width: 350px;
+  height: 200px;
+}
+
+.flex-box{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.sizes{
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.circle_stat{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 23px 30px 0 rgba(0,0,0,0.13);
+  box-shadow: 0 23px 30px 0 rgba(0,0,0,0.13);
+}
+
+.flex-pricing-header{
+  // background-color: red;
+  display: flex;
+  justify-content: space-around;
+  background: blue;
+}
+.flex-pricing-header-size{
+  width: 150px;
+  height: 50px;
+}
+.white-font{
+  color: white;
+}
+.center-it{
+  margin: 15px;
+}
+.center-button{
+  margin: 10px;
+}
+.flex-pricing{
+  // background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+.color-demo{
+  // background-color: pink;
+  width: 150px;
+  height: 100px;
+}
+
+.service-title{
+    margin: 10px;
+}
+
+.button-width{
+  width: 150px;
+  height: 80px;
+}
+
+.flex-pricing-container{
+  // width: 900px;
+  // margin: 5px auto;
+  // border: 1px solid;
+  // border-radius: 10px;
+}
+
+.single-items{
+  // border: 1px solid;
+  // border-radius: 10px;
+  justify-content: space-evenly;
+  height: 200px;
+
+}
+
+
+.flex-single-something{
+  display: flex;
+  justify-content: space-around;
+  // background-color: red;
+  width: 390px;
+}
+.testing-color{
+  // background-color: pink;
+  margin-left: 20px;
+  width: 150px;
+  height: auto;
+}
+.one-item-textbox{
+  // background-color: pink;
+  // margin-top: 5px;
+  // padding: 10px;
+}
+.flex-single-items{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  height: 50px;
+  margin-top: 10px;
+}
+.align-textfield{
+  padding-left: 10px;
+}
+.price{
+  // background-color: red;
+}
+.price_padding{
+  // background-color: blue;
+  margin-top: 10px;
+}
+.total{
+  width: 100%;
+  height: 70px;
+  // background-color: blue;
+}
+.total_amount{
+  width: 240px;
+  height: 70px;
+  // background-color: green;
+  float: right;
+}
+.total_button{
+  width: 200px;
+  height: 50px;
+  float: right;
+  margin: 5px;
+  // background-color: blue;
+  border-radius: 5px;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    // background-color: pink;
+    // border: 3px solid #73AD21;
+}
+
+.align-total-box{
+  width: 80px;
+  height: 20px;
+  // background-color: green;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+}
