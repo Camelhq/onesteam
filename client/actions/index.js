@@ -13,7 +13,7 @@ export const BACKEND = 'http://localhost:3000';
 
 export function addPosts(data) {
   console.log(data)
-  const request = axios.post(`${BACKEND}/residential`, data);
+  const request = axios.post(`${BACKEND}/invoice`, data);
   return dispatch => {
     request.then(function(response){
       dispatch(addPost(response));

@@ -78,9 +78,7 @@ render() {
 							 <li ><Link to="/invoice"><div class="underline nav-bar-item" >Invoice</div></Link></li>
 						 </ul>
 						</div>
-						{/* <li><Link to="/residential">Residential</Link></li>
-						<li><Link to="/commerical">Commerical</Link></li>
-						<li><Link to="/about">About</Link></li> */}
+
 						<div class="" onClick={this.trait_select.bind(this)}>
 							<div class="nav-bar-align mobile-nav-bar">
 								<div class="bar1" style={{transform: this.state.rotated ? 'rotate(-45deg) translate(-6px, 5px)' : 'none' }}></div>

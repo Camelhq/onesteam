@@ -98,7 +98,7 @@ function generateInvoice(invoice, filename, success, error) {
 
 
 
-app.post('/residential', function (req, res) {
+app.post('/invoice', function (req, res) {
   var invoice = {
       logo: "http://invoiced.com/img/logo-invoice.png",
       from: req.body.from,

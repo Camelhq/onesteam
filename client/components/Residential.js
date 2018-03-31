@@ -42,27 +42,17 @@ const Residential = () => {
       // padding: "20px",
       lineHeight: "27px"
     }
-    // const residentialFontTitle = {
-    //   width: "350px",
-    //   margin: "auto",
-    //   padding: "20px",
-    //   fontSize: "36px",
-    //   fontWeight: "300"
-    // }
-    // const residentialDescription = {
-    //   marginTop: "70px"
-    // }
+
     const responsiveImg = {
       width: "100%"
     }
     return(
-    <div style={residentialBackground}>
+    <div>
       <ScrollToTopOnMount/>
       <section class="residential-header" >
         <h1 class="large-font residential-title">We are a full-service commercial & residential cleaning specialist</h1>
       </section>
       <section>
-        {/* <h1 class="font-text-center">When choosing a professional carpet cleaning company, look for the five E’s:</h1> */}
           <div class="residential-flex order-after">
             <div style={back}>
               <img style={responsiveImg} src={dogCarpet} />
@@ -125,21 +115,12 @@ const Residential = () => {
       </div>
     </div>
   </section>
-  {/* <section class="residential-services">
-    <div>button to Quote</div>
-  </section> */}
 
       <section>
         <div style={map}>
           <GoogleApi />
         </div>
       </section>
-      {/* <section>
-        <div>location map</div>
-        <div>We are all around Arizona</div>
-      </section> */}
-
-      {/* <img class="" src="/client/imgs/hallway.png" /> */}
     </div>
   )
 }
