@@ -65,17 +65,22 @@ const Home = () => {
               </div>
             </div>
             <br/>
+
             <div class="action-button-alignment">
+              <Link to="/invoice" >
               <div class="action-button">
-                <div class="onesteam-margin-button">click here</div>
+              <div class="onesteam-margin-button">click here</div>
               </div>
+              </Link>
               <div class="res-or-com--alignment">
                 <h2 class="tiny-font">Or</h2>
                 <h2 class="tiny-font">Commerical</h2>
               </div>
+              <a href="mailto:lucky@cleanwithone.com?Subject=Hello">
               <div class="action-button">
                 <div class="onesteam-margin-button">contact us</div>
               </div>
+              </a>
             </div>
           </div>
         </div>
@@ -166,9 +171,11 @@ const Home = () => {
               All areas are checked again
             </div>
           </div>
+          <Link to="/invoice">
           <div class="onesteam-button">
             <div class="onesteam-margin-button">Fill out form</div>
           </div>
+          </Link>
         </div>
       </div>
 

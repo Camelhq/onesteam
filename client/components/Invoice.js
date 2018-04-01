@@ -189,6 +189,7 @@ class Invoice extends React.Component {
     }
     return(
     <div>
+      <ScrollToTopOnMount/>
       <section class="residential-header" >
         <div>
           <h1 class="middle-font residential-title">Invoice</h1>
@@ -448,6 +449,16 @@ class Invoice extends React.Component {
     </div>
   )
   };
+}
+
+class ScrollToTopOnMount extends Component {
+  componentDidMount(prevProps) {
+    window.scrollTo(0, 0)
+  }
+
+  render() {
+    return null
+  }
 }
 
 
