@@ -86,7 +86,7 @@ render() {
 								<div class="bar3" style={{transform: this.state.rotated ? 'rotate(45deg) translate(-6px, -5px)' : 'none' }}></div>
 							</div>
 							<ul class="nav-bar-tabs font-large">
-								<li style={{display: this.state.color_black ? 'none' : '' }}><Link to="/residental"><div class="underline mobile-nav-bar-item">Residental</div></Link></li>
+								<li style={{display: this.state.color_black ? 'none' : '' }}><Link to="/residential"><div class="underline mobile-nav-bar-item">Residental</div></Link></li>
 								<li style={{display: this.state.color_black ? 'none' : '' }}><Link to="/commerical"><div class="underline mobile-nav-bar-item">Commerical</div></Link></li>
 								<li style={{display: this.state.color_black ? 'none' : '' }}><Link to="/about"><div class="underline mobile-nav-bar-item">About</div></Link></li>
 								<li style={{display: this.state.color_black ? 'none' : '' }}><Link to="/invoice"><div class="underline mobile-nav-bar-item">Invoice</div></Link></li>
