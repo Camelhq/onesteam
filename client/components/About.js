@@ -13,7 +13,9 @@ const About = () => {
       <div>
        <h2 class="middle-font">OneSteam is a family owned business with over 30 years of experience in the cleaning and janitorial industry.
          We offer first class cleaning to anyone who needs our services.
-         Our staff consists of highly skilled professionals who take great pride in customer satisfaction.</h2>
+         Our staff consists of highly skilled professionals who take great pride in customer satisfaction.
+         We look forward to helping you with all your cleaning needs!
+       </h2>
       </div>
       <div>
          {/* <img src="/client/imgs/onesteam-tools-image.png"/> */}

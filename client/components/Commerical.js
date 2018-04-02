@@ -49,7 +49,7 @@ const Commerical = () => {
       <ScrollToTopOnMount/>
       <section class="call-to-action-commerical" >
         <div class="call-to-action-home">
-          <h1 class="cashing large-font home-title">If you want it clean, call onesteam.</h1>
+          <h1 class="cashing large-font home-title">If you want it clean, call onesteam</h1>
           {/* <div class="cashing large-font home-title">
             https://dribbble.com/shots/1813486-Invoice-Sherpa-New-Feature
             Address: <input  class="blue-button" name="Address" type="address" placeholder="type address" value="submit" />
@@ -116,8 +116,8 @@ const Commerical = () => {
             </div>
               <div>
               <h2 class="small-font commerical-line-spacing">Butter, salt, sodas, candy, sticky fingers and foot traffic can damage carpeting and upholstered seats.
-              Any fabric-covered surface in your auditorium should be cleaned regularly to remove built-up soil, spots, stains and other messes.
-              A low-moisture solution cleans thoroughly and dries fast so carpets and seats are ready for use when your doors open for business.</h2>
+              Any fabric-covered surface in your auditorium should be cleaned regularly to remove built-up soil, spots, and stains.
+              With onesteam carpets and seats are ready for use when your doors open for business.</h2>
             </div>
             <div class="commerical-action-button-spacing">
            <div class="commerical-action-button">

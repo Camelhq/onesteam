@@ -143,7 +143,7 @@ const Home = () => {
                     <div class="testing">
                       <label class="thick-letters">Air Duct</label>
                     </div>
-                    <p class="description">we clean accumalated dust, grout, grime, debris, pet dander and allergens</p>
+                    <p class="description">we clean accumalated dust, grime, debris, pet dander and allergens</p>
                   </div>
                 </div>
               </li>
@@ -154,21 +154,38 @@ const Home = () => {
           <div class="employee-service-title">
             <div class="employee-alignment">
               <img class="employee-icon" src={star} />
-              Price Guarantee 15x15 for $35
+              Price Guarantee
             </div>
+            <div class="employee-alignment">
+              <img class="employee-icon" src={star} />
+              $35 dollars per room. Flat rate.
+            </div>
+            <div class="employee-alignment">
+              <img class="employee-icon" src={star} />
+              Flat rate includes:
+            </div>
+
           </div>
           <div class="employee-alignment">
             <div class="employee-statement">
               <img class="employee-icon" src={check} />
-              Free vacuum
+              Move light furniture
             </div>
             <div class="employee-statement">
               <img class="employee-icon" src={check} />
-              pre-spray area with solution that help lift dry. 
+              Pre vacuum
             </div>
             <div class="employee-statement">
               <img class="employee-icon" src={check} />
-              All areas are checked again
+              Pre-spray soil areas
+            </div>
+            <div class="employee-statement">
+              <img class="employee-icon" src={check} />
+              One steam clean
+            </div>
+            <div class="employee-statement">
+              <img class="employee-icon" src={check} />
+              Focus dry fans
             </div>
           </div>
           <Link to="/invoice">
@@ -184,10 +201,28 @@ const Home = () => {
     <section class="services-for-commerical">
       <div class="column-title">Why choose One Steam?</div>
         <div style={whyContainer}>
+
           <div class="flex-container order-second">
             <div class="flex-element">
               <div class="why-title">
-                <p >Tilt Cleaner Certified</p>
+                <p >Carpet Cleaning</p>
+              </div>
+             <div class="why-description">
+               Our full-service commercial & residential cleaning specialists can get out the toughest, deepest, and dirtiest carpet stains quickly and affordably.
+             </div>
+            </div>
+            <div class="flex-element">
+              <div class="align-content-center">
+                <img class="" src={livingRoom} />
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flex-container order-second">
+            <div class="flex-element">
+              <div class="why-title">
+                <p >Tilt and Grout Cleaning Certified</p>
               </div>
              <div class="why-description">
                At One Steam, we believe the health and safety of you and your family should never be compromised.
@@ -200,6 +235,21 @@ const Home = () => {
             </div>
           </div>
 
+          <div class="flex-container order-second">
+            <div class="flex-element">
+              <div class="why-title">
+                <p>Upholstery</p>
+              </div>
+             <div class="why-description">
+               We help you clean your couches, sofas and other upholstery ensuring that your home and office furniture are clean and smell fresh.
+             </div>
+            </div>
+            <div class="flex-element">
+              <div class="align-content-center">
+                <img class="" src={upholstery} />
+              </div>
+            </div>
+          </div>
 
           <div class="flex-container order-second">
             <div class="flex-element">
@@ -217,21 +267,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div class="flex-container order-second">
-            <div class="flex-element">
-              <div class="why-title">
-                <p>Furniture</p>
-              </div>
-             <div class="why-description">
-               We have what it takes to reduce the onset of allergy and asthma symptoms by thoroughly eliminating carpet dirt, mites, dust and odors.
-             </div>
-            </div>
-            <div class="flex-element">
-              <div class="align-content-center">
-                <img class="" src={upholstery} />
-              </div>
-            </div>
-          </div>
+
 
           <div class="flex-container order-second">
             <div class="flex-element">
@@ -250,21 +286,6 @@ const Home = () => {
           </div>
 
 
-          <div class="flex-container order-second">
-            <div class="flex-element">
-              <div class="why-title">
-                <p >Carpet Cleaning</p>
-              </div>
-             <div class="why-description">
-               Our full-service commercial & residential cleaning specialists can get out the toughest, deepest, and dirtiest carpet stains quickly and affordably.
-             </div>
-            </div>
-            <div class="flex-element">
-              <div class="align-content-center">
-                <img class="" src={livingRoom} />
-              </div>
-            </div>
-          </div>
         </div>
 
     </section>
@@ -275,11 +296,11 @@ const Home = () => {
           <div class="commerical-comment">
             <div class="commerical-description">
               <div class="commerical-frontpage">
-                From middle school auditoriums to commerical threaters,
-                we keep our clients happy without missing a spot.
+                Middle school auditoriums to commerical threaters,
+                we keep our clients happy and we will prove to you why we are the One!
               </div>
                 <div class="commerical-description-button">
-                  We love commerical
+                  We love our commerical clients.
                   <div class="commerical-button">
                     <Link class="commerical-click" to="/commerical">Learn More</Link>
                   </div>

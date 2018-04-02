@@ -108,7 +108,7 @@ const Residential = () => {
           <div class="residentialDescription">
             <p class="residentialFontTitle">Equipment</p>
             <p class="residentialFont">We use state-of-the-art truck mount equipment,
-              hot water extraction technologies and techniques to get the job right the first time.</p>
+              hot water extraction technologies and techniques to get the job done right the first time.</p>
           </div>
         </div>
         <div style={back}>
