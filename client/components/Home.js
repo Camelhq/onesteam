@@ -87,7 +87,7 @@ const Home = () => {
       </div>
     </section>
     <section class="">
-    <div class="column-title apprance">Provide services</div>
+    <div class="column-title apprance">Services</div>
       <div class="">
         <div class=" flex-container order-second">
           <div class="flex-element">
@@ -99,7 +99,7 @@ const Home = () => {
                     <div class="testing">
                       <label class="thick-letters">Carpet</label>
                     </div>
-                    <p class="description">Hard to get spots from your pet.</p>
+                    <p class="description">Get the stains out.</p>
                   </div>
                 </div>
               </li>
@@ -108,9 +108,9 @@ const Home = () => {
                   <img class="onesteam-icon" src={footsteps} />
                   <div class="service-font">
                     <div class="testing">
-                      <label class="thick-letters">Tile</label>
+                      <label class="thick-letters">Tile & Grout</label>
                     </div>
-                    <p class="description">A built-up of scrub.</p>
+                    <p class="description">Bright and shinny.</p>
                   </div>
                 </div>
               </li>
@@ -119,9 +119,9 @@ const Home = () => {
                   <img class="onesteam-icon" src={sofa}/>
                   <div class="service-font">
                     <div class="testing">
-                      <label class="thick-letters">Sofa</label>
+                      <label class="thick-letters">upholstery</label>
                     </div>
-                    <p class="description">That wine stain after christmas.</p>
+                    <p class="description">>Netflix and Chill.</p>
                   </div>
                 </div>
               </li>
@@ -132,7 +132,7 @@ const Home = () => {
                     <div class="testing">
                       <label class="thick-letters">Stairs</label>
                     </div>
-                    <p class="description">muddy shoes after a birthday party.</p>
+                    <p class="description">We restore high traffic areas.</p>
                   </div>
                 </div>
               </li>
@@ -141,9 +141,9 @@ const Home = () => {
                   <img class="onesteam-icon" src={couch} />
                   <div class="service-font">
                     <div class="testing">
-                      <label class="thick-letters">Couch</label>
+                      <label class="thick-letters">Air Duct</label>
                     </div>
-                    <p class="description">Want to restore your favorite couch.</p>
+                    <p class="description">we clean accumalated dust, grout, grime, debris, pet dander and allergens</p>
                   </div>
                 </div>
               </li>
@@ -160,11 +160,11 @@ const Home = () => {
           <div class="employee-alignment">
             <div class="employee-statement">
               <img class="employee-icon" src={check} />
-              We stay until its done correct
+              Free vacuum
             </div>
             <div class="employee-statement">
               <img class="employee-icon" src={check} />
-              We pay attention to details
+              pre-spray area with solution that help lift dry. 
             </div>
             <div class="employee-statement">
               <img class="employee-icon" src={check} />

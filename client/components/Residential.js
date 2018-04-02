@@ -51,7 +51,7 @@ const Residential = () => {
     <div>
       <ScrollToTopOnMount/>
       <section class="residential-header" >
-        <h1 class="large-font residential-title">We are a full-service commercial & residential cleaning specialist</h1>
+        <h1 class="large-font residential-title">Get your floors clean with onesteam</h1>
       </section>
       <section>
           <div class="residential-flex order-after">
@@ -76,7 +76,7 @@ const Residential = () => {
             <div class="residentialDescription">
               <p class="residentialFontTitle">Certifications and Techiques</p>
               <p class="residentialFont">All onesteam technicians are IICRC certified, ensuring that you receive the benefits of the newest
-                and best cleaning techniques and technologies in the industry and that you are hiring a company that complies with
+                and best cleaning techniques and technologies. Onesteam is a company that complies with
                 rigorous business standards and ethics.</p>
             </div>
           </div>
@@ -95,7 +95,7 @@ const Residential = () => {
         <div  style={back}>
           <div class="residentialDescription">
             <p class="residentialFontTitle">Years of Experience</p>
-            <p class="residentialFont">We provide Arizona and surrounding states with the best carpet and tile cleaning for nearly 30 years.</p>
+            <p class="residentialFont">For nearly 30 years, we've been providing Arizona and surrounding states with the best carpet and tile cleaning.</p>
           </div>
         </div>
       </div>
@@ -107,7 +107,8 @@ const Residential = () => {
         <div  style={back}>
           <div class="residentialDescription">
             <p class="residentialFontTitle">Equipment</p>
-            <p class="residentialFont">We use state-of-the-art truck mount equipment, hot water extraction technologies and techniques.</p>
+            <p class="residentialFont">We use state-of-the-art truck mount equipment,
+              hot water extraction technologies and techniques to get the job right the first time.</p>
           </div>
         </div>
         <div style={back}>

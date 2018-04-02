@@ -45,9 +45,9 @@ const Footer = () => {
           </div>
         </div>
         <div class=" padding-footer flex-element">
-          <div class="footer-padding small-font">Careers</div>
+          <div class="footer-padding small-font">Contact</div>
           <div class="footer-padding">
-            Regional Manager
+            Director of Operations
             602-783-0999
             lucky@cleanwithone.com
           </div>
@@ -55,8 +55,7 @@ const Footer = () => {
         <div class=" padding-footer flex-element">
           <h1 class="footer-padding small-font">Location</h1>
           <div class="footer-padding">
-            110 W Orion st. Ste. 137 | Tempe AZ | 85283
-            602-783-0999
+            110 W Orion St. Ste. 137 | Tempe AZ | 85283
           </div>
         </div>
       </div>

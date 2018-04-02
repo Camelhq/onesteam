@@ -79,7 +79,7 @@ const Commerical = () => {
               </div>
               <div>
                 <h1 class="small-font commerical-line-spacing">Your customers will rate their experience based on two things: customer service and cleanliness.
-                  With onesteam on your side, we can ensure your carpets and tile stay clean and odor-free.</h1>
+                  With onesteam on your side, we can ensure your carpets and tile are clean and odor-free.</h1>
               </div>
             </div>
 
@@ -117,7 +117,7 @@ const Commerical = () => {
               <div>
               <h2 class="small-font commerical-line-spacing">Butter, salt, sodas, candy, sticky fingers and foot traffic can damage carpeting and upholstered seats.
               Any fabric-covered surface in your auditorium should be cleaned regularly to remove built-up soil, spots, stains and other messes.
-              Low-moisture encapsulation cleans thoroughly and dries fast so carpets and seats are ready for use when your doors open for business.</h2>
+              A low-moisture solution cleans thoroughly and dries fast so carpets and seats are ready for use when your doors open for business.</h2>
             </div>
             <div class="commerical-action-button-spacing">
            <div class="commerical-action-button">
