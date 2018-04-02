@@ -16,6 +16,8 @@ import gutter from "../imgs/gutter.png"
 import  upholstery from "../imgs/upholstery.png"
 import rugCleaning from "../imgs/rugCleaning.png"
 import livingRoom from "../imgs/livingRoom.png"
+import smell from "../imgs/smell.svg"
+import love from "../imgs/love.svg"
 
 const Home = () => {
   const map = {
@@ -90,7 +92,7 @@ const Home = () => {
     <div class="column-title apprance">Services</div>
       <div class="">
         <div class=" flex-container order-second">
-          <div class="flex-element">
+          <div class="flex-element add-pads">
             <ul>
               <li>
                 <div class="service-row">
@@ -121,7 +123,7 @@ const Home = () => {
                     <div class="testing">
                       <label class="thick-letters">upholstery</label>
                     </div>
-                    <p class="description">>Netflix and Chill.</p>
+                    <p class="description">Netflix and Chill.</p>
                   </div>
                 </div>
               </li>
@@ -138,12 +140,12 @@ const Home = () => {
               </li>
               <li>
                 <div class="service-row">
-                  <img class="onesteam-icon" src={couch} />
+                  <img class="onesteam-icon" src={smell} />
                   <div class="service-font">
                     <div class="testing">
                       <label class="thick-letters">Air Duct</label>
                     </div>
-                    <p class="description">we clean accumalated dust, grime, debris, pet dander and allergens</p>
+                    <p class="description">we clean dust, grime, debris, pet dander & allergens</p>
                   </div>
                 </div>
               </li>
@@ -161,7 +163,7 @@ const Home = () => {
               $35 dollars per room. Flat rate.
             </div>
             <div class="employee-alignment">
-              <img class="employee-icon" src={star} />
+              <img class="employee-icon" />
               Flat rate includes:
             </div>
 
@@ -297,11 +299,11 @@ const Home = () => {
             <div class="commerical-description">
               <div class="commerical-frontpage">
                 Middle school auditoriums to commerical threaters,
-                we keep our clients happy and we will prove to you why we are the One!
+                we keep our clients happy and we will prove to you why we are the one!
               </div>
                 <div class="commerical-description-button">
-                  We love our commerical clients.
-                  <div class="commerical-button">
+                  <div class="left"><img src={love} />our commerical clients</div>
+                  <div class="commerical-button right">
                     <Link class="commerical-click" to="/commerical">Learn More</Link>
                   </div>
                 </div>

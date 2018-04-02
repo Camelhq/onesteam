@@ -11,6 +11,9 @@ import cleanedRoom from "../imgs/cleaned-room.png"
 import cleanedTile from "../imgs/cleaned-tile.png"
 import iICRC from "../imgs/IICRC-min.png"
 import machine from "../imgs/machine-min.png"
+import US from "../imgs/U-S.png"
+
+
 const Residential = () => {
     const residentialBackground = {
       // margin: "auto",
@@ -90,7 +93,7 @@ const Residential = () => {
     <div class="">
       <div  class="residential-flex order-after">
         <div style={back}>
-          <img style={responsiveImg} src={cleanedRoom} />
+          <img style={responsiveImg} src={US} />
         </div>
         <div  style={back}>
           <div class="residentialDescription">
