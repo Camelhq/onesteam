@@ -48,15 +48,15 @@ const Footer = () => {
           <div class="footer-padding small-font">Careers</div>
           <div class="footer-padding">
             Regional Manager
-            602-639-3520
-            support@onesteam.com
+            602-783-0999
+            lucky@cleanwithone.com
           </div>
         </div>
         <div class=" padding-footer flex-element">
           <h1 class="footer-padding small-font">Location</h1>
           <div class="footer-padding">
             110 W Orion st. Ste. 137 | Tempe AZ | 85283
-            602-639-3520
+            602-783-0999
           </div>
         </div>
       </div>

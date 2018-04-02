@@ -9,7 +9,8 @@ import dogCarpet from "../imgs/dog-carpet.png"
 import couch from "../imgs/couch.png"
 import cleanedRoom from "../imgs/cleaned-room.png"
 import cleanedTile from "../imgs/cleaned-tile.png"
-
+import iICRC from "../imgs/IICRC-min.png"
+import machine from "../imgs/machine-min.png"
 const Residential = () => {
     const residentialBackground = {
       // margin: "auto",
@@ -59,7 +60,7 @@ const Residential = () => {
             </div>
             <div style={back} >
             <div class="residentialDescription">
-              <p  class="residentialFontTitle" >We treat cleaning serious</p>
+              <p  class="residentialFontTitle" >We are serious about cleaning</p>
               <p  class="residentialFont">
                 We use environmentally friendly and green cleaning solutions, disinfectants,
                 and deodorizers to ensure health and safety inside and outside your home.
@@ -73,14 +74,14 @@ const Residential = () => {
         <div  class="residential-flex order-before">
           <div  style={back}>
             <div class="residentialDescription">
-              <p class="residentialFontTitle">Techiques and technologies</p>
-              <p class="residentialFont">One Steam expertise is IICRC certified, ensuring that you receive the benefits of the newest
+              <p class="residentialFontTitle">Certifications and Techiques</p>
+              <p class="residentialFont">All onesteam technicians are IICRC certified, ensuring that you receive the benefits of the newest
                 and best cleaning techniques and technologies in the industry and that you are hiring a company that complies with
                 rigorous business standards and ethics.</p>
             </div>
           </div>
           <div style={back}>
-            <img style={responsiveImg} src={couch} />
+            <img style={responsiveImg} src={iICRC} />
           </div>
         </div>
       </div>
@@ -94,7 +95,7 @@ const Residential = () => {
         <div  style={back}>
           <div class="residentialDescription">
             <p class="residentialFontTitle">Years of Experience</p>
-            <p class="residentialFont">We have been providing Arizona with the best carpet cleaning and related services for nearly 30 years.</p>
+            <p class="residentialFont">We provide Arizona and surrounding states with the best carpet and tile cleaning for nearly 30 years.</p>
           </div>
         </div>
       </div>
@@ -105,12 +106,12 @@ const Residential = () => {
       <div class="residential-flex order-before">
         <div  style={back}>
           <div class="residentialDescription">
-            <p class="residentialFontTitle">Tile</p>
-            <p class="residentialFont">Equipment: We use state-of-the-art equipment, technologies, and techniques.</p>
+            <p class="residentialFontTitle">Equipment</p>
+            <p class="residentialFont">We use state-of-the-art truck mount equipment, hot water extraction technologies and techniques.</p>
           </div>
         </div>
         <div style={back}>
-          <img style={responsiveImg} src={cleanedTile} />
+          <img style={responsiveImg} src={machine} />
         </div>
       </div>
     </div>

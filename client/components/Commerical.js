@@ -49,7 +49,7 @@ const Commerical = () => {
       <ScrollToTopOnMount/>
       <section class="call-to-action-commerical" >
         <div class="call-to-action-home">
-          <h1 class="cashing large-font home-title">We have the space. We have the team.</h1>
+          <h1 class="cashing large-font home-title">If you want it clean, call onesteam.</h1>
           {/* <div class="cashing large-font home-title">
             https://dribbble.com/shots/1813486-Invoice-Sherpa-New-Feature
             Address: <input  class="blue-button" name="Address" type="address" placeholder="type address" value="submit" />
@@ -62,8 +62,8 @@ const Commerical = () => {
           <div class="size">
             <div class="commerical-circle">
               <div class="commerical-page-description">
-                <div class="business-number-font">50+</div>
-                <div class="business-number-description">Businesses trust One Steam</div>
+                <div class="business-number-font">IICRC</div>
+                <div class="business-number-description">certified onesteam</div>
               </div>
             </div>
           </div>
@@ -75,11 +75,11 @@ const Commerical = () => {
           <div class=" responsive-padding commerical-flex-container commerical-order-before">
             <div class="mobile-padding flex-element">
               <div style={commericalTitle} class="commerical-line-spacing-title">
-                <h1 class="middle-font">We specialized in bathrooms and large floor plans.</h1>
+                <h1 class="middle-font">We specialize in commerical carpet and tile cleaning.</h1>
               </div>
               <div>
-                <h1 class="small-font commerical-line-spacing">Your customers will rate their experience based on the cleanliness and smell of your restrooms and carpet.
-                  Be sure to cast a commercial cleaning service that understands the importance of a clean, odor-free rooms and its impact on your business.</h1>
+                <h1 class="small-font commerical-line-spacing">Your customers will rate their experience based on two things: customer service and cleanliness.
+                  With onesteam on your side, we can ensure your carpets and tile stay clean and odor-free.</h1>
               </div>
             </div>
 

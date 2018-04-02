@@ -43,7 +43,7 @@ const Home = () => {
   <div>
     <section class="call-to-action">
       <div class="call-to-action-home">
-      <h1 class="home-title large-font large-font-title">We are a full-service commercial & residential cleaning specialist</h1>
+      <h1 class="home-title large-font large-font-title">We specialize in commercial & residential cleaning</h1>
       {/* <h3 class="middle-font home-title">full-service commercial & residential cleaning specialists</h3> */}
         <div class="call-to-action-box">
           <div class="action-box-text">
@@ -87,7 +87,7 @@ const Home = () => {
       </div>
     </section>
     <section class="">
-    <div class="column-title apprance">Services for every apprance</div>
+    <div class="column-title apprance">Provide services</div>
       <div class="">
         <div class=" flex-container order-second">
           <div class="flex-element">
