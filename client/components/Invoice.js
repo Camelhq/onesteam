@@ -20,24 +20,40 @@ class Invoice extends React.Component {
       name: "",
       to: "",
       // notes: "",
-      living_room15: "",
-      living_room20: "",
-      living_room30: "",
-      // living_room_total: "",
-      dining_room15: "",
-      dining_room20: "",
-      dining_room30: "",
-      // dining_room_total: "",
-      medea_room15: "",
-      medea_room20: "",
-      medea_room30: "",
-      // medea_room_total: "",
-      hallway: "",
-      sofa: "",
-      recliner: "",
-      staircase: "",
-      love_seat: "",
-      chair: ""
+      living_room15: 0,
+      living_room15Final: 0,
+      living_room20: 0,
+      living_room20Final: 0,
+      living_room30: 0,
+      living_room30Final: 0,
+      living_room_total: 0,
+      dining_room15: 0,
+      dining_room15Final: 0,
+      dining_room20: 0,
+      dining_room20Final: 0,
+      dining_room30: 0,
+      dining_room30Final: 0,
+      dining_room_total: 0,
+      medea_room15: 0,
+      medea_room15Final: 0,
+      medea_room20: 0,
+      medea_room20Final: 0,
+      medea_room30: 0,
+      medea_room30Final: 0,
+      medea_room_total: 0,
+      hallway: 0,
+      hallwayFinal: 0,
+      sofa: 0,
+      sofaFinal: 0,
+      recliner: 0,
+      reclinerFinal: 0,
+      staircase: 0,
+      staircaseFinal: 0,
+      love_seat: 0,
+      love_seatFinal: 0,
+      chair: 0,
+      chairFinal: 0,
+      total: 0
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.dateChange = this.dateChange.bind(this);
@@ -61,6 +77,7 @@ class Invoice extends React.Component {
     this.staircase = this.staircase.bind(this);
     this.love_seat = this.love_seat.bind(this);
     this.chair = this.chair.bind(this);
+    // this.total = this.total.bind(this);
   }
 
 
@@ -84,96 +101,143 @@ class Invoice extends React.Component {
       to: event.target.value
     });
   }
+
+
+
   living_room15(event) {
+    const newIncome = event.target.value;
     this.setState({
-      living_room15: event.target.value
+      living_room15: newIncome,
+      living_room15Final: newIncome * 35
     });
   }
   living_room20(event) {
+    const newIncome = event.target.value;
     this.setState({
-      living_room20: event.target.value
+      living_room20: newIncome,
+      living_room20Final: newIncome - 0
     });
   }
   living_room30(event) {
+    const newIncome = event.target.value;
     this.setState({
-      living_room30: event.target.value
+      living_room30: newIncome,
+      living_room30Final: newIncome - 0
     });
   }
-  living_room_total(event) {
-    this.setState({
-      living_room_total: event.target.value
-    });
-  }
+  // living_room_total() {
+  //   const total = this.state.living_room15Final + this.state.living_room20Final + this.state.living_room30Final
+  //   console.log(total)
+  //   this.setState({
+  //     living_room_totalFinal: totalValue + this.state.living_room15
+  //   });
+  // }
   dining_room15(event) {
+    const newIncome = event.target.value;
     this.setState({
-      dining_room15: event.target.value
+      dining_room15: newIncome,
+      dining_room15Final: newIncome - 0
     });
   }
   dining_room20(event) {
+    const newIncome = event.target.value;
     this.setState({
-      dining_room20: event.target.value
+      dining_room20: newIncome,
+      dining_room20Final: newIncome - 0
     });
   }
   dining_room30(event) {
+    const newIncome = event.target.value;
     this.setState({
-      dining_room30: event.target.value
+      dining_room30: newIncome,
+      dining_room30Final: newIncome - 0
     });
   }
-  dining_room_total(event) {
-    this.setState({
-      dining_room_total: event.target.value
-    });
-  }
+  // dining_room_total(event) {
+  //   this.setState({
+  //     dining_room_total: event.target.value
+  //   });
+  // }
   medea_room15(event) {
+    const newIncome = event.target.value;
     this.setState({
-      medea_room15: event.target.value
+      medea_room15: newIncome,
+      medea_room15Final: newIncome - 0
     });
   }
   medea_room20(event) {
+    const newIncome = event.target.value;
     this.setState({
-      medea_room20: event.target.value
+      medea_room20: newIncome,
+      medea_room20Final: newIncome - 0
     });
   }
   medea_room30(event) {
+    const newIncome = event.target.value;
     this.setState({
-      medea_room30: event.target.value
+      medea_room30: newIncome,
+      medea_room30Final: newIncome - 0
     });
   }
-  medea_room_total(event) {
-    this.setState({
-      medea_room_total: event.target.value
-    });
-  }
+  // medea_room_total(event) {
+  //   const newIncome = event.target.value;
+  //   this.setState({
+  //     medea_room_total: newIncome,
+  //
+  //   });
+  // }
   hallway(event) {
+    const newIncome = event.target.value;
     this.setState({
-      hallway: event.target.value
+      hallway: newIncome,
+      hallwayFinal: newIncome - 0
     });
   }
   sofa(event) {
+    const newIncome = event.target.value;
     this.setState({
-      sofa: event.target.value
+      sofa: newIncome,
+      sofaFinal: newIncome - 0
     });
   }
   recliner(event) {
+    const newIncome = event.target.value;
     this.setState({
-      recliner: event.target.value
+      recliner: newIncome,
+      reclinerFinal: newIncome - 0
     });
   }
   staircase(event) {
+    const newIncome = event.target.value;
     this.setState({
-      staircase: event.target.value
+      staircase: newIncome,
+      staircaseFinal: newIncome - 0
     });
   }
   love_seat(event) {
+    const newIncome = event.target.value;
     this.setState({
-      love_seat: event.target.value
+      love_seat: newIncome,
+      love_seatFinal: newIncome - 0
     });
   }
   chair(event) {
+    const newIncome = event.target.value;
     this.setState({
-      chair: event.target.value
+      chair: newIncome,
+      chairFinal: newIncome - 0
     });
   }
+  // total(){
+  //   const total = this.state.living_room15Final + this.state.living_room20Final + this.state.living_room30Final +
+  //                this.state.dining_room15Final + this.state.dining_room20Final + this.state.dining_room30Final +
+  //                this.state.medea_room15Final + this.state.medea_room20Final + this.state.medea_room30Final +
+  //                this.state.hallwayFinal + this.state.staircaseFinal + this.state.sofaFinal + this.state.love_seatFinal +
+  //                this.state.reclinerFinal + this.state.chairFinal;
+  //   this.setState({
+  //     total: total - 0
+  //   })
+  // }
 
 
   render() {
@@ -187,6 +251,19 @@ class Invoice extends React.Component {
       textAlign: "center",
       color: "white"
     }
+
+    const { displayValue } = this.state;
+
+
+ const total = this.state.living_room15Final + this.state.living_room20Final + this.state.living_room30Final +
+              this.state.dining_room15Final + this.state.dining_room20Final + this.state.dining_room30Final +
+              this.state.medea_room15Final + this.state.medea_room20Final + this.state.medea_room30Final +
+              this.state.hallwayFinal + this.state.staircaseFinal + this.state.sofaFinal + this.state.love_seatFinal +
+              this.state.reclinerFinal + this.state.chairFinal;
+
+
+
+
     return(
     <div>
       <ScrollToTopOnMount/>
@@ -281,14 +358,14 @@ class Invoice extends React.Component {
 
                     <div class="color-demo">
                       <div class="line-under-price">
-                        <div class="align-total-box middle-font">
-                          0
+                        <div class="align-total-box middle-font" >
+                          {this.state.living_room15Final + this.state.living_room20Final + this.state.living_room30Final}
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="flex-pricing">
+                   <div class="flex-pricing">
                     <div class="color-demo">
                       <div class="service-title">
                         <h1 class="middle-font">Dining Room</h1>
@@ -313,7 +390,7 @@ class Invoice extends React.Component {
                     <div class="color-demo">
                       <div class="line-under-price">
                         <div class="align-total-box middle-font">
-                          0
+                          {this.state.dining_room15Final + this.state.dining_room20Final + this.state.dining_room30Final}
                         </div>
                       </div>
                     </div>
@@ -343,7 +420,7 @@ class Invoice extends React.Component {
                     <div class="color-demo">
                       <div class="price">
                         <div class="align-total-box middle-font">
-                          0
+                          {this.state.medea_room15Final + this.state.medea_room20Final + this.state.medea_room30Final}
                         </div>
                       </div>
                     </div>
@@ -374,7 +451,7 @@ class Invoice extends React.Component {
                     <div class="flex-single-something">
                       <div class="price">
                         <div class="price_padding">
-                          <h1 class="middle-font">0</h1>
+                          <h1 class="middle-font">{this.state.hallwayFinal + this.state.staircaseFinal}</h1>
                         </div>
                       </div>
                     </div>
@@ -400,7 +477,7 @@ class Invoice extends React.Component {
                     <div class="flex-single-something">
                       <div class="price">
                         <div class="price_padding">
-                          <h1 class="middle-font">0</h1>
+                          <h1 class="middle-font">{this.state.sofaFinal + this.state.love_seatFinal}</h1>
                         </div>
                       </div>
                     </div>
@@ -426,7 +503,7 @@ class Invoice extends React.Component {
                     <div class="flex-single-something">
                       <div class="price">
                         <div class="price_padding">
-                          <h1 class="middle-font">0</h1>
+                          <h1 class="middle-font">{this.state.reclinerFinal + this.state.chairFinal}</h1>
                         </div>
                       </div>
                     </div>
@@ -435,12 +512,13 @@ class Invoice extends React.Component {
                 <div class="total">
                   <div class="total_amount">
                     <div class="middle-font floating-box">Total:</div>
-                    <div class="middle-font floating-box">0</div>
+                    <div class="middle-font floating-box">{total}</div>
                   </div>
                 </div>
                 <div class="total">
                   <div class="total_button">
-                    <button type="submit">Do the thing</button>
+                    <button type="submit" class="commerical-button">submit
+                  </button>
                   </div>
                 </div>
                 </form>

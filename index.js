@@ -4,7 +4,8 @@ var fs         = require("fs");
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var override = require('method-override');
-var path = require('path')
+var path = require('path');
+// const nodemailer = require('nodemailer');
 
 //https://github.com/Invoiced/invoice-generator-api
 
@@ -135,14 +136,52 @@ app.post('/invoice', function (req, res) {
       love_seat: req.body.love_seat,
       chair: req.body.chair,
     })
-    console.log(invoice)
-    res.json(invoice)
+
+    // var api_key = 'key-XXXXXXXXXXXXXXXXXXXXXXX';
+    // var domain = 'www.mydomain.com';
+    // var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+    //
+    // var data = {
+    //   from: ,
+    //   to: 'serobnic@mail.ru',
+    //   subject: 'Hello',
+    //   text: 'Testing some Mailgun awesomeness!'
+    // };
+    //
+    // mailgun.messages().send(data, function (error, body) {
+    //   console.log(body);
+    // });
+
+  //   let mailOptions = {
+  //   from: 's@sosborne.co', // sender address
+  //   to: 'court@camelhq.com', // list of receivers
+  //   subject: 'Your Invoice', // Subject line
+  //   text: 'this is plain text to see if this works', // plain text body
+  //   html: '<b>Your Invoice</b>', // html body
+  //   attachments: [{   // file on disk as an attachment
+  //     filename: 'invoice.pdf',
+  //     path: './invoice.pdf' // stream this file
+  //    }]
+  //  };
+
+  // var sendMail = () => {
+  //   transporter.sendMail(mailOptions, (error, info) => {
+  //     if (error) {
+  //       return console.log(error);
+  //     }
+  //     console.log('Message %s sent: %s', info.messageId, info.response);
+  //   });
+  // };
+  //   console.log(invoice)
+
+
       // generateInvoice(invoice, 'invoice.pdf', function() {
       //     console.log("Saved invoice to invoice.pdf");
       // }, function(error) {
       //     console.error(error);
       // });
-    // }
+
+
 });
 
 

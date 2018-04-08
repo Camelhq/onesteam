@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-import Logo from "../imgs/onesteam-Logo.png"
+import Logo from "../imgs/onesteam-Logo.svg"
 
 const Footer = () => {
   const white = {
@@ -47,9 +47,9 @@ const Footer = () => {
         <div class=" padding-footer flex-element">
           <div class="footer-padding small-font">Contact</div>
           <div class="footer-padding">
-            Director of Operations
-            602-783-0999
-            lucky@cleanwithone.com
+            onesteam Headquarters
+            602-892-0302
+            support@onesteam.com
           </div>
         </div>
         <div class=" padding-footer flex-element">

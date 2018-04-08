@@ -10,7 +10,7 @@ import GoogleApi from './GoogleApi';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 //https://css-tricks.com/learning-react-router/#article-header-id-9
 
-import logo from "../imgs/onesteam-Logo.png"
+import logo from "../imgs/onesteam-Logo.svg"
 
 class App extends Component {
 	constructor (props) {
