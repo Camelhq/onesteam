@@ -102,8 +102,8 @@ function generateInvoice(invoice, filename, success, error) {
 app.post('/invoice', function (req, res) {
   var invoice = {
       logo: "http://invoiced.com/img/logo-invoice.png",
-      from: req.body.from,
-      to: req.body.to,
+      from: "req.body.from",
+      to: "req.body.to",
       currency: "usd",
       number: "INV-0001",
       payment_terms: "Auto-Billed - Do Not Pay",
@@ -120,15 +120,12 @@ app.post('/invoice', function (req, res) {
       living_room15: req.body.living_room15,
       living_room20: req.body.living_room20,
       living_room30: req.body.living_room30,
-      living_room_total: req.body.living_room_total,
       dining_room15: req.body.dining_room15,
       dining_room20: req.body.dining_room20,
       dining_room30: req.body.dining_room30,
-      dining_room_total: req.body.dining_room_total,
       medea_room15: req.body.medea_room15,
       medea_room20: req.body.medea_room20,
       medea_room30: req.body.medea_room30,
-      medea_room_total: req.body.medea_room_total,
       hallway: req.body.hallway,
       sofa: req.body.sofa,
       recliner: req.body.recliner,
@@ -137,49 +134,34 @@ app.post('/invoice', function (req, res) {
       chair: req.body.chair,
     })
 
-    // var api_key = 'key-XXXXXXXXXXXXXXXXXXXXXXX';
-    // var domain = 'www.mydomain.com';
-    // var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
-    //
-    // var data = {
-    //   from: ,
-    //   to: 'serobnic@mail.ru',
-    //   subject: 'Hello',
-    //   text: 'Testing some Mailgun awesomeness!'
-    // };
-    //
-    // mailgun.messages().send(data, function (error, body) {
-    //   console.log(body);
-    // });
+    let mailOptions = {
+    from: 's@sosborne.co', // sender address
+    to: 'court@camelhq.com', // list of receivers
+    subject: 'Your Invoice', // Subject line
+    text: 'this is plain text to see if this works', // plain text body
+    html: '<b>Your Invoice</b>', // html body
+    attachments: [{   // file on disk as an attachment
+      filename: 'invoice.pdf',
+      path: './invoice.pdf' // stream this file
+     }]
+   };
 
-  //   let mailOptions = {
-  //   from: 's@sosborne.co', // sender address
-  //   to: 'court@camelhq.com', // list of receivers
-  //   subject: 'Your Invoice', // Subject line
-  //   text: 'this is plain text to see if this works', // plain text body
-  //   html: '<b>Your Invoice</b>', // html body
-  //   attachments: [{   // file on disk as an attachment
-  //     filename: 'invoice.pdf',
-  //     path: './invoice.pdf' // stream this file
-  //    }]
-  //  };
+  var sendMail = () => {
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.log(error);
+      }
+      console.log('Message %s sent: %s', info.messageId, info.response);
+    });
+  };
+    console.log(invoice)
+    // var to = invoice.to + '.pdf';
 
-  // var sendMail = () => {
-  //   transporter.sendMail(mailOptions, (error, info) => {
-  //     if (error) {
-  //       return console.log(error);
-  //     }
-  //     console.log('Message %s sent: %s', info.messageId, info.response);
-  //   });
-  // };
-  //   console.log(invoice)
-
-
-      // generateInvoice(invoice, 'invoice.pdf', function() {
-      //     console.log("Saved invoice to invoice.pdf");
-      // }, function(error) {
-      //     console.error(error);
-      // });
+      generateInvoice(invoice, 'invoice.pdf', function() {
+          console.log("Saved invoice to invoice.pdf");
+      }, function(error) {
+          console.error(error);
+      });
 
 
 });

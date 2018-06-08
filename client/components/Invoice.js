@@ -11,6 +11,10 @@ import moment from 'moment';
 //https://github.com/Invoiced/invoice-generator-api
 //https://github.com/Hacker0x01/react-datepicker
 //https://www.youtube.com/watch?v=SX5HkOP-LWs&list=PLuNEz8XtB51K-x3bwCC9uNM_cxXaiCcRY&index=7
+
+import axios from 'axios';
+
+
 class Invoice extends React.Component {
   constructor (props) {
     super(props)
@@ -78,12 +82,6 @@ class Invoice extends React.Component {
     this.love_seat = this.love_seat.bind(this);
     this.chair = this.chair.bind(this);
     // this.total = this.total.bind(this);
-  }
-
-
-  handleSubmit(event) {
-    this.props.addPosts(this.state)
-    event.preventDefault()
   }
 
   dateChange(date) {
@@ -228,17 +226,71 @@ class Invoice extends React.Component {
       chairFinal: newIncome - 0
     });
   }
-  // total(){
-  //   const total = this.state.living_room15Final + this.state.living_room20Final + this.state.living_room30Final +
-  //                this.state.dining_room15Final + this.state.dining_room20Final + this.state.dining_room30Final +
-  //                this.state.medea_room15Final + this.state.medea_room20Final + this.state.medea_room30Final +
-  //                this.state.hallwayFinal + this.state.staircaseFinal + this.state.sofaFinal + this.state.love_seatFinal +
-  //                this.state.reclinerFinal + this.state.chairFinal;
-  //   this.setState({
-  //     total: total - 0
-  //   })
-  // }
 
+
+    handleSubmit(event) {
+      // this.props.addPosts(this.state)
+      event.preventDefault()
+      event.target.reset()
+      const name = this.state.name;
+      const living_room15 = this.state.living_room15Final;
+      const living_room20  = this.state.living_room20Final;
+      const living_room30 = this.state.living_room30Final;
+      const dining_room15 = this.state.dining_room15Final;
+      const dining_room20 = this.state.dining_room20Final;
+      const dining_room30 = this.state.dining_room30Final;
+      const medea_room15 = this.state.medea_room15Final;
+      const medea_room20 = this.state.medea_room20Final;
+      const medea_room30 = this.state.medea_room30Final;
+      const hallway = this.state.hallwayFinal;
+      const staircase = this.state.staircaseFinal;
+      const sofa = this.state.sofaFinal;
+      const love_seat = this.state.love_seatFinal;
+      const recliner = this.state.reclinerFinal ;
+      const chair = this.state.chairFinal;
+
+      const total = this.state.living_room15Final + this.state.living_room20Final + this.state.living_room30Final +
+                   this.state.dining_room15Final + this.state.dining_room20Final + this.state.dining_room30Final +
+                   this.state.medea_room15Final + this.state.medea_room20Final + this.state.medea_room30Final +
+                   this.state.hallwayFinal + this.state.staircaseFinal + this.state.sofaFinal + this.state.love_seatFinal +
+                   this.state.reclinerFinal + this.state.chairFinal;
+      this.setState({
+        total: total - 0
+      })
+      console.log(total)
+      axios.post("http://localhost:3000/invoice", {
+        name,
+        // from,
+        // to,
+        // message,
+        living_room15,
+        living_room20,
+        living_room30,
+        dining_room15,
+        living_room20,
+        dining_room30,
+        medea_room15,
+        medea_room20,
+        medea_room30,
+        hallway,
+        staircase,
+        sofa,
+        love_seat,
+        recliner,
+        chair
+      })
+        .then((response) =>  {
+          // if(response.data.status)
+          if(response.status == 200){
+            console.log(response)
+          }
+        })
+        .catch((error) =>  {
+          // this.setState({ showModal: false });
+          console.log(error);
+        });
+
+    }
 
   render() {
     // const { handleSubmit, pristine, reset, submitting } = this.props
@@ -278,7 +330,7 @@ class Invoice extends React.Component {
         <div>
         <div class="align-quote-page">
           <form onSubmit={this.handleSubmit}>
-            <div class="invoice-header">
+            <div class="invoice-header residential-flex order-after">
               <div class="invoice-float">
                   <h1 class="small-font">fill out this form and it will be sent to you and sent to one our team and will connect you
                   for someone to visit.
@@ -303,10 +355,10 @@ class Invoice extends React.Component {
                   </div>
                 </div>
 
-                <div class="flex-pricing-header">
+                <div class="flex-pricing-header ">
                   <div class="flex-pricing-header-size">
                     <div class="center-it">
-                      <h1 class="large-font white-font">info</h1>
+                      <h1 class="large-font white-font">Info</h1>
                     </div>
                   </div>
                   <div class="flex-pricing-header-size">
@@ -333,30 +385,33 @@ class Invoice extends React.Component {
 
                 {/* <div class="line">
                 </div> */}
-                <div class="flex-pricing-container">
-                  <div class="flex-pricing">
-                    <div class="color-demo">
+                <div class="">
+                  <div class="flex-pricing pricing-order-after">
+                    <div class="color-demo cleaning-breakdown">
                       <div class="service-title">
                         <h1 class="middle-font">Living Room</h1>
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.living_room15} onChange={this.living_room15} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem"  value={this.state.living_room20} onChange={this.living_room20} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.living_room30} onChange={this.living_room30} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
 
-                    <div class="color-demo">
+                    <div class="color-demo cleaning-breakdown">
                       <div class="line-under-price">
                         <div class="align-total-box middle-font" >
                           {this.state.living_room15Final + this.state.living_room20Final + this.state.living_room30Final}
@@ -365,29 +420,32 @@ class Invoice extends React.Component {
                     </div>
                   </div>
 
-                   <div class="flex-pricing">
-                    <div class="color-demo">
+                   <div class="flex-pricing pricing-order-after">
+                    <div class="color-demo cleaning-breakdown">
                       <div class="service-title">
                         <h1 class="middle-font">Dining Room</h1>
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.dining_room15} onChange={this.dining_room15} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.dining_room20} onChange={this.dining_room20} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.dining_room30} onChange={this.dining_room30} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
 
-                    <div class="color-demo">
+                    <div class="color-demo cleaning-breakdown">
                       <div class="line-under-price">
                         <div class="align-total-box middle-font">
                           {this.state.dining_room15Final + this.state.dining_room20Final + this.state.dining_room30Final}
@@ -396,28 +454,31 @@ class Invoice extends React.Component {
                     </div>
                   </div>
 
-                  <div class="flex-pricing">
-                    <div class="color-demo">
+                  <div class="flex-pricing pricing-order-after">
+                    <div class="color-demo cleaning-breakdown">
                       <div class="service-title">
                         <h1 class="middle-font">Medea Room</h1>
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.medea_room15} onChange={this.medea_room15} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.medea_room20} onChange={this.medea_room20} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="button-width">
+                    <div class="button-width cleaning-breakdown">
                       <div class="center-button">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.medea_room30} onChange={this.medea_room30} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="color-demo">
+                    <div class="color-demo cleaning-breakdown">
                       <div class="price">
                         <div class="align-total-box middle-font">
                           {this.state.medea_room15Final + this.state.medea_room20Final + this.state.medea_room30Final}
@@ -430,25 +491,28 @@ class Invoice extends React.Component {
 
 
                 <div class="single-items">
-
-                  <div class="flex-single-items">
-                    <div class="flex-single-something">
-                      <div class="testing-color">
-                        <h1 class="middle-font">Hallway</h1>
+                  <div class="flex-single-items ">
+                    <div class="flex-single-something pricing-order-after2">
+                      <div class="one-listing-font-padding">
+                        <div>
+                          <h1 class="middle-font">Hallway</h1>
+                        </div>
                       </div>
-                      <div class="align-textfield">
+                      <div class="align-textfield ">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.hallway} onChange={this.hallway} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="flex-single-something">
-                      <div class="testing-color">
+                    <div class="flex-single-something pricing-order-after2">
+                      <div class="one-listing-font-padding">
                         <h1 class="middle-font">Staircase</h1>
                       </div>
                       <div class="align-textfield">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.staircase} onChange={this.staircase} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="flex-single-something">
+                    <div class="flex-single-something pricing-order-after2">
                       <div class="price">
                         <div class="price_padding">
                           <h1 class="middle-font">{this.state.hallwayFinal + this.state.staircaseFinal}</h1>
@@ -458,23 +522,25 @@ class Invoice extends React.Component {
                   </div>
 
                   <div class="flex-single-items">
-                    <div class="flex-single-something">
-                      <div class="testing-color">
+                    <div class="flex-single-something pricing-order-after2">
+                      <div class="one-listing-font-padding">
                         <h1 class="middle-font">Sofa</h1>
                       </div>
                       <div class="align-textfield">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.sofa} onChange={this.sofa} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="flex-single-something">
-                      <div class="testing-color">
+                    <div class="flex-single-something pricing-order-after2">
+                      <div class="one-listing-font-padding">
                         <h1 class="middle-font">Love Seat</h1>
                       </div>
                       <div class="align-textfield">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.love_seat} onChange={this.love_seat} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="flex-single-something">
+                    <div class="flex-single-something pricing-order-after2">
                       <div class="price">
                         <div class="price_padding">
                           <h1 class="middle-font">{this.state.sofaFinal + this.state.love_seatFinal}</h1>
@@ -484,41 +550,47 @@ class Invoice extends React.Component {
                   </div>
 
                   <div class="flex-single-items">
-                    <div class="flex-single-something">
-                      <div class="testing-color">
+                    <div class="flex-single-something pricing-order-after2">
+                      <div class="one-listing-font-padding">
                         <h1 class="middle-font">Recliner</h1>
                       </div>
                       <div class="align-textfield">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.recliner} onChange={this.recliner} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="flex-single-something">
-                      <div class="testing-color">
+                    <div class="flex-single-something pricing-order-after2">
+                      <div class="one-listing-font-padding">
                         <h1 class="middle-font">Chair</h1>
                       </div>
                       <div class="align-textfield">
+                        <div class="secondary-layout">15x15</div>
                         <input class="blue-textfield-oneItem" value={this.state.chair} onChange={this.chair} name="Address" type="address" placeholder="type address" />
                       </div>
                     </div>
-                    <div class="flex-single-something">
+                    <div class="flex-single-something pricing-order-after2">
                       <div class="price">
                         <div class="price_padding">
+                          <div class="secondary-layout">15x15</div>
                           <h1 class="middle-font">{this.state.reclinerFinal + this.state.chairFinal}</h1>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="total">
-                  <div class="total_amount">
-                    <div class="middle-font floating-box">Total:</div>
-                    <div class="middle-font floating-box">{total}</div>
+                <div class="pricing-bottom-padding">
+                  <div class="total">
+                    <div class="total_amount">
+                      <div class="middle-font floating-box">Total:</div>
+                      <div class="middle-font floating-box">{total}</div>
+                    </div>
                   </div>
-                </div>
-                <div class="total">
-                  <div class="total_button">
-                    <button type="submit" class="commerical-button">submit
-                  </button>
+                  <div>
+                    <div class="total_button">
+                      <button type="submit" class="button">
+                        <div class="inner-pricing-button">submit</div>
+                    </button>
+                  </div>
                   </div>
                 </div>
                 </form>
@@ -560,79 +632,6 @@ const mapDispatchToProps = { //this is what fires off actions in redux
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Invoice)
-// <div class="flex-box">
-//   <div>
-//   <h1># of Rooms:</h1>
-//   </div>
-//   <div>
-//     <input class="blue-button" name="Address" type="address" placeholder="type address" />
-//   </div>
-//   <div>
-//     <input class="blue-button" name="Address" type="address" placeholder="type address" />
-//   </div>
-//   <div>
-//     <input class="blue-button" name="Address" type="address" placeholder="type address" />
-//   </div>
-//   <div class="line">
-//     Total:
-//   </div>
-// </div>
-// </div>
-//   <h1>line</h1>
-// <div>
-
-
-
-// <section class="services-for-residential">
-// v
-// <h1>{this.props.posts}</h1>
-// <input id="Email" type="text" />
-// <input id="Date" type="text" />
-// <button>click here </button>
-//   <form onSubmit={handleSubmit}>
-//     <div>
-//       <label>First Name</label>
-//       <div>
-//         <Field
-//           name="firstName"
-//           component="input"
-//           type="text"
-//           placeholder="First Name"
-//         />
-//       </div>
-//     </div>
-//     <div>
-//       <label>Last Name</label>
-//       <div>
-//         <Field
-//           name="lastName"
-//           component="input"
-//           type="text"
-//           placeholder="Last Name"
-//         />
-//       </div>
-//     </div>
-//     <div>
-//       <label>Email</label>
-//       <div>
-//         <Field
-//           name="email"
-//           component="input"
-//           type="email"
-//           placeholder="Email"
-//         />
-//       </div>
-//     </div>
-//     <div>
-//       <button type="submit" disabled={pristine || submitting}>
-//         Submit
-//       </button>
-//       <button type="button" disabled={pristine || submitting} onClick={reset}>
-//         Clear Values
-//       </button>
-//     </div>
-//   </form>
-// </section>
 
 
 

@@ -504,6 +504,9 @@ SVG
     .nav-bar-flex{
       display: none;
     }
+    // .secondary-layout{
+    //   visibility: hidden;
+    // }
 }
 
 
@@ -565,6 +568,68 @@ SVG
     margin-top: 10px;
   }
 }
+.flex-pricing-container{
+  display: flex;
+  justify-content: space-round;
+  // max-width: 1100px;
+  // margin: auto;
+}
+
+@media screen and (max-width: 750px){
+  .pricing-order-after {
+    width: 400px;
+    margin: auto;
+    flex-direction: column;
+    // display: block;
+  }
+  .cleaning-breakdown{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .pricing-order-after2{
+    // margin-top: 100px;
+    // margin-bottom: 100px;
+    // background-color: green;
+    flex-direction: column;
+
+    // margin-bottom: 100px;
+  }
+  .one-listing-font-padding{
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .flex-single-items{
+    padding-top: 40px;
+  }
+  .total{
+    height: 100px;
+    padding-top: 175px;
+    // margin-left: 10px;
+    // padding-bottom: 80px;
+  }
+  .total_button{
+    width: 150px;
+    // padding-right: 30px;
+  }
+  .total_amount{
+    width: auto;
+    // width: 180px;
+  }
+  .floating-box{
+    width: 80px;
+  }
+  .flex-pricing-header{
+    display: none;
+  }
+  .secondary-layout{
+    visibility: visible;
+    display: block;
+  }
+}
+.secondary-layout{
+  display: none;
+}
+
 
 @media (max-width: 800px){
   .order-second {
@@ -583,6 +648,7 @@ SVG
   }
 
   .employee-service-column{
+    height: 500px;
     width: 336px;
     margin-top: 75px;
     padding-left: 10px;
@@ -621,6 +687,7 @@ SVG
     // font-size: 0.9em;
     right: 50px;
   }
+
 }
 
 @media (max-width: 530px){
